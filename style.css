@@ -156,19 +156,22 @@ grid-template-columns:
 gap: 25px;
 }
 .photo-card {
-height: 300px;
-border-radius: 20px;
-overflow: hidden;
-box-shadow: 0 15px 30px rgba(0,0,0,0.12);
-transition: 0.4s;
+    min-height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.photo-card:hover {
-transform: translateY(-10px) rotate(2deg);
-}
+
 .photo-card img {
-width: 100%;
-height: auto;
-object-fit: contain;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    display: block;
 }
 /* LETTER */
 .letter-section {
